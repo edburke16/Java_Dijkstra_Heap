@@ -138,7 +138,6 @@ class Heap {
         return false;
     }
 
-    // TODO CONFIRM WITH TA
     public void bubbleUp(int in) {
         while (key[heap[in / 2]] > key[heap[in]]) {
             swap(in, in / 2);
@@ -146,7 +145,6 @@ class Heap {
         }
     }
 
-    // TODO CONFIRM WITH TA
     public void bubbleDown(int in) {
         while (2 * in <= heapSize) {
             int j = 2 * in;
